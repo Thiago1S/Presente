@@ -19,8 +19,8 @@ h1 em{color:var(--rose);font-weight:400}
 .hero p{max-width:570px;margin:22px auto;color:var(--muted);font-size:clamp(1.05rem,2.8vw,1.35rem);line-height:1.8}
 .heart{font-size:2rem;color:var(--rose);display:inline-block;animation:pulse 2s infinite}
 @keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.15)}}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border:1px solid #b86b85;background:#512238;color:#fff1f5;text-decoration:none;padding:14px 22px;border-radius:999px;font:.88rem Arial,sans-serif;letter-spacing:.04em;cursor:pointer;transition:.2s;margin:8px}
-.btn:hover{background:#71304c;transform:translateY(-2px)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border:1px solid #b86b85;background:linear-gradient(135deg,#512238,#3b1b2c);color:#fff1f5;text-decoration:none;padding:14px 22px;border-radius:999px;font:.88rem Arial,sans-serif;letter-spacing:.04em;cursor:pointer;transition:background .25s ease,border-color .25s ease,box-shadow .25s ease,transform .25s ease;margin:8px;box-shadow:0 4px 14px rgba(0,0,0,.2)}
+.btn:hover{background:linear-gradient(135deg,#71304c,#512238);border-color:#d18aa5;transform:translateY(-2px);box-shadow:0 7px 22px rgba(183,107,145,.22)}
 section{padding:56px 0}
 .section-title{text-align:center;font-size:clamp(2rem,5vw,3.1rem);font-weight:400;margin:0 0 12px}
 .subtitle{text-align:center;color:var(--muted);font:.95rem/1.7 Arial,sans-serif;margin:0 auto 30px;max-width:600px}
