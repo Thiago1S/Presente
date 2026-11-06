@@ -56,6 +56,30 @@ footer span{color:var(--rose)}
 .track-info span{display:block;color:var(--muted);font:.82rem Arial,sans-serif;margin-top:4px}
 .track-play{color:var(--rose);font-size:1.1rem}
 
+.romantic-divider {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: min(280px, 70%);
+  margin: 36px auto;
+  color: #d987a5;
+  opacity: 0.85;
+}
+.romantic-divider::before,
+.romantic-divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #704052);
+}
+.romantic-divider::after {
+  background: linear-gradient(90deg, #704052, transparent);
+}
+.romantic-divider span {
+  font-size: 15px;
+  line-height: 1;
+}
+
 </style>
 </head>
 <body>
@@ -106,6 +130,8 @@ Feliz aniversário de namoro, Mor. Mesmo de longe, hoje eu escolho você. E esco
   </article>
 </section>
 
+<div class="romantic-divider" aria-hidden="true"><span>♥</span></div>
+  
 <section>
   <h2 class="section-title">A nossa trilha sonora</h2>
   <p class="subtitle">Músicas para ouvir enquanto lê a carta — e para lembrar que, mesmo longe, vocês compartilham algo bonito.</p>
