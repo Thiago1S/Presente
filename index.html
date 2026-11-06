@@ -59,12 +59,13 @@ footer span{color:var(--rose)}
 .romantic-divider {
   display: flex;
   align-items: center;
-  gap: 14px;
-  width: min(280px, 70%);
-  margin: 36px auto;
+  gap: 18px;
+  width: min(380px, 75%);
+  margin: 42px auto;
   color: #d987a5;
-  opacity: 0.85;
+  opacity: 0.9;
 }
+
 .romantic-divider::before,
 .romantic-divider::after {
   content: "";
@@ -72,11 +73,13 @@ footer span{color:var(--rose)}
   height: 1px;
   background: linear-gradient(90deg, transparent, #704052);
 }
+
 .romantic-divider::after {
   background: linear-gradient(90deg, #704052, transparent);
 }
+
 .romantic-divider span {
-  font-size: 15px;
+  font-size: clamp(15px, 1.4vw, 21px);
   line-height: 1;
 }
 
