@@ -11,6 +11,16 @@
 html{scroll-behavior:smooth}
 body{margin:0;background:radial-gradient(ellipse at 50% 0%,#3a1729 0%,var(--bg) 48%,#080609 100%);color:var(--soft);font-family:Georgia,"Times New Roman",serif;min-height:100vh;overflow-x:hidden}
 body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.38;background-image:radial-gradient(1px 1px at 12% 19%,#fff 99%,transparent),radial-gradient(1px 1px at 78% 26%,#f5c8d7 99%,transparent),radial-gradient(1px 1px at 43% 70%,#fff 99%,transparent),radial-gradient(1px 1px at 89% 81%,#fff 99%,transparent),radial-gradient(1px 1px at 24% 88%,#f5c8d7 99%,transparent);background-size:240px 220px;z-index:-1}
+  body:after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse at 0% 35%, rgba(126, 35, 75, 0.16), transparent 38%),
+    radial-gradient(ellipse at 100% 75%, rgba(183, 75, 120, 0.12), transparent 36%);
+  z-index: -1;
+}
 .wrap{width:min(920px,92%);margin:auto}
 .hero{min-height:92vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:70px 0 54px}
 .eyebrow{font:.75rem/1.5 Arial,sans-serif;letter-spacing:.28em;text-transform:uppercase;color:var(--rose)}
